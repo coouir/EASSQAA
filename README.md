@@ -1,4 +1,6 @@
-# Error Analysis of SAR QA Agents (EASQAA)
+# Error Analysis of SAR Ship Question Answering Agents (EASSQAA)
+
+EASSQAA is the acronym of the paper title, and the repository name follows it. The Python package and command keep the short name `sarqa`.
 
 This repository is an experiment repository that analyzes **where errors come from** in LLM agents that detect ships in SAR (synthetic aperture radar) images and answer questions by calling the detection results through tools. Each wrong answer is split into an "input error" (the boxes given by the detector were wrong) and an "agent error" (the agent mishandled the boxes it received), and each agent error is classified by the stage where the agent first deviated (question interpretation, tool selection/calls, result reading, planning/branching, calculation, answer formatting, execution failure). The package and command name is `sarqa`.
 
@@ -73,7 +75,7 @@ The first-deviation stage assigned by the automatic error classification was val
 
 ## Citation
 
-This repository contains the code and data of the paper 'Error Analysis of SAR Question-Answering Agents', submitted to the undergraduate paper competition of the 2026 Fall Conference of The Korean Institute of Broadcast and Media Engineers.
+This repository contains the code and data of the paper 'Error Analysis of SAR Ship Question Answering Agents', submitted to the undergraduate paper competition of the 2026 Fall Conference of The Korean Institute of Broadcast and Media Engineers.
 
 ## License
 
