@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "sarqa"
 version = "0.1.0"
-description = "Error analysis of SAR question-answering agents (EASQAA)"
+description = "Error analysis of SAR ship question-answering agents (EASSQAA)"
 requires-python = ">=3.10"
 dependencies = [
     "numpy",
