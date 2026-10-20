@@ -63,7 +63,7 @@ The order and the commands are exactly as written in `PROTOCOL.md`, `docs/freeze
 7. Classification: `sarqa classify --runs outputs/runs/ --split test`.
 8. Analysis: `python -m sarqa.analysis.main_run --runs outputs/runs --questions data/questions/test.json --out outputs/analysis` (usage: the header of `src/sarqa/analysis/main_run.py`).
 
-The detector weights, the detection cache, the test question file, and the run records are not in the repository. The SHA-256 of the weights and data files is in `PROTOCOL.md` §1.
+The detector weights (`outputs/detector/weights.pt`), the detection cache (`data/detections/`), and the injected/corrected box files (`data/injected/`, `data/corrected/`) are not in the repository; their SHA-256 is in `PROTOCOL.md` §1. The test questions, run records, classification results, and aggregate tables are in [`release/`](release/): `release/questions/test.json` has the same SHA-256 as `data/questions/test.json` in `PROTOCOL.md` §1, and the other files can be checked with `release/SHA256SUMS`.
 
 ## Freeze point: `freeze-v1`
 
@@ -75,7 +75,7 @@ The first-deviation stage assigned by the automatic error classification was val
 
 ## Citation
 
-This repository contains the code and data of the paper 'Error Analysis of SAR Ship Question Answering Agents', submitted to the undergraduate paper competition of the 2026 Fall Conference of The Korean Institute of Broadcast and Media Engineers.
+This repository contains the code and data of the paper 'Error Analysis of SAR Ship Question Answering Agents', accepted to the undergraduate paper competition of the 2026 Fall Conference of The Korean Institute of Broadcast and Media Engineers.
 
 ## License
 
